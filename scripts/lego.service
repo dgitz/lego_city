@@ -1,0 +1,11 @@
+ [Unit]
+ Description=Lego City Boot Script
+ After=multi-user.target
+
+ [Service]
+ Type=simple
+ ExecStart=/home/robot/projects/lego_city/src/train_crossing.py
+ StandardOutput=file:/var/log/std.log
+ StandardError=file:/var/log/err.log
+ [Install]
+ WantedBy=multi-user.target
